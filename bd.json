@@ -1,1 +1,29 @@
-[]
+[
+    {
+        "id": 1,
+        "nome": "P.Y.T(Pretty Young Thing)",
+        "autor": "Michael Jackson",
+        "duracao": "3:59",
+        "estilo": "R&B (Rhythm and Blues) e Pop/Dance.",
+        "mesLancamento": 9,
+        "anoLancamento": 1982
+    },
+    {
+        "id": 2,
+        "nome": "Rock With You",
+        "autor": "Michael Jackson",
+        "duracao": "3:21",
+        "estilo": "R&B (Rhythm and Blues), Funk e Pop",
+        "mesLancamento": 11,
+        "anoLancamento": 1979
+    },
+    {
+        "id": 3,
+        "nome": "Kid & Leveret",
+        "autor": "Yaelokre",
+        "duracao": "5:13",
+        "estilo": "música folclórica (folk)",
+        "mesLancamento": 2,
+        "anoLancamento": 2025
+    }
+]
