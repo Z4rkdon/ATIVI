@@ -28,8 +28,8 @@ app.post("/musicas", (req, res) => {
 
 app.get("/musicas", (req, res) => {
     try {
-        const musicas = JSON.parse(fs.readFileSync("bd.json", "utf8"))
-        res.status(200).json(musicas)
+        const musica = JSON.parse(fs.readFileSync("bd.json", "utf8"))
+        res.status(200).json(musica)
     } catch (error) {
         res.status(500).json({ resposta: error.message })
     }
@@ -41,7 +41,6 @@ app.get("/musicas/:id", (req, res) => {
     try {
         const musicas = JSON.parse(fs.readFileSync("bd.json", "utf8"))
         const musica_encontrada = musicas.find((m) => m.id == id)
-        
         if (!musica_encontrada) {
             return res.status(404).json({ error: "Música não existe em nosso banco" })
         }
@@ -55,11 +54,10 @@ app.get("/musicas/:id", (req, res) => {
 app.get("/musicas/estilo/:estilo", (req, res) => {
     const estiloBusca = req.params.estilo.toLowerCase()
     try {
-        const musicas = JSON.parse(fs.readFileSync("bd.json", "utf8"))
-        const musicasFiltradas = musicas.filter(
+        const musica = JSON.parse(fs.readFileSync("bd.json", "utf8"))
+        const musicasFiltradas = musica.filter(
             (m) => m.estilo && m.estilo.toLowerCase() === estiloBusca
         )
-        
         if (musicasFiltradas.length === 0) {
             return res.status(404).json({ resposta: "Nenhuma música encontrada para este estilo" })
         }
@@ -73,15 +71,14 @@ app.get("/musicas/estilo/:estilo", (req, res) => {
 app.delete("/musicas/:id", (req, res) => {
     const id = req.params.id
     try {
-        const musicas = JSON.parse(fs.readFileSync("bd.json", "utf8"))
-        const musicaExiste = musicas.some(m => m.id == id)
-        
+        const musica = JSON.parse(fs.readFileSync("bd.json", "utf8"))
+        const musicaExiste = musica.some(m => m.id == id)
         if (!musicaExiste) {
             return res.status(404).json({ resposta: "Música não encontrada" })
         }
         
-        const musicasAtualizadas = musicas.filter(m => m.id != id)
-        fs.writeFileSync('bd.json', JSON.stringify(musicasAtualizadas), 'utf8')
+        const musicaAtualizadas = musicas.filter(m => m.id != id)
+        fs.writeFileSync('bd.json', JSON.stringify(musicaAtualizadas), 'utf8')
         res.status(200).json({ resposta: "Música removida com sucesso!" })
     } catch (error) {
         res.status(500).json({ resposta: error.message })
