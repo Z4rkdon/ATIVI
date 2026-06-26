@@ -9,7 +9,52 @@
         "anoLancamento": 1982
     },
     {
-        "id": 2,
+        "id":2,
+        "nome": "Last Surprise",
+        "autor": "Shoji Meguro (vocal por Lyn Inaizumi)",
+        "duracao": 3:55,
+        "estilo": "Acid Jazz, J-Pop e Orchestral",
+        "mesLancamento": "Janeiro",
+        "anoLancamento": 2017
+    },
+    {
+        "id":3,
+        "nome": "Mass Destruction",
+        "autor": "Shoji Meguro (vocal por Lotus Juice e Yumi Kawamura)",
+        "duracao": 3:29,
+        "estilo": "J-Pop / Hip-Hop / Jazz Fusion",
+        "mesLancamento": "Julho",
+        "anoLancamento": 2006
+    },
+    {
+        "id":4,
+        "nome": "Reach Out To The Truth",
+        "autor": "Shoji Meguro (vocal por Shihoko Hirata)",
+        "duracao": 2:48,
+        "estilo": "J-Pop / Pop Rock",
+        "mesLancamento": "Julho",
+        "anoLancamento": 2008
+    },
+    {
+        "id":5,
+        "nome": "Rude Buster",
+        "autor": "Toby Fox",
+        "duracao": 1:15,
+        "estilo": "Chiptune / Jazz Rock",
+        "mesLancamento": "Novembro",
+        "anoLancamento": 2018
+    },
+    {
+        "id":6,
+        "nome": "BIG SHOT",
+        "autor": "Toby Fox",
+        "duracao": 2:22,
+        "estilo": "Chiptune / Progressive Rock / Synthpop",
+        "mesLancamento": "Setembro",
+        "anoLancamento": 2021,
+    },
+    {
+        "id": 7,
         "nome": "Rock With You",
         "autor": "Michael Jackson",
         "duracao": "3:21",
@@ -18,7 +63,7 @@
         "anoLancamento": 1979
     },
     {
-        "id": 3,
+        "id": 8,
         "nome": "Kid & Leveret",
         "autor": "Yaelokre",
         "duracao": "5:13",
