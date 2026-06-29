@@ -1,6 +1,7 @@
 // npm init
 // npm i express
 // RAPIDAPI CLIENT
+// localhost
 
 const express = require("express")
 const app = express()
@@ -77,7 +78,7 @@ app.delete("/musicas/:id", (req, res) => {
             return res.status(404).json({ resposta: "Música não encontrada" })
         }
         
-        const musicaAtualizadas = musicas.filter(m => m.id != id)
+        const musicaAtualizadas = musica.filter(m => m.id != id)
         fs.writeFileSync('bd.json', JSON.stringify(musicaAtualizadas), 'utf8')
         res.status(200).json({ resposta: "Música removida com sucesso!" })
     } catch (error) {
