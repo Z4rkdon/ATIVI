@@ -4,7 +4,7 @@
         "nome": "P.Y.T(Pretty Young Thing)",
         "autor": "Michael Jackson",
         "duracao": "3:59",
-        "estilo": "R&B (Rhythm and Blues) e Pop/Dance.",
+        "estilo": "Rhythm and Blues",
         "mesLancamento": 9,
         "anoLancamento": 1982
     },
@@ -13,7 +13,7 @@
         "nome": "Last Surprise",
         "autor": "Shoji Meguro (vocal por Lyn Inaizumi)",
         "duracao": "3:55",
-        "estilo": "Acid Jazz, J-Pop e Orchestral",
+        "estilo": "Orchestral",
         "mesLancamento": "Janeiro",
         "anoLancamento": 2017
     },
@@ -22,7 +22,7 @@
         "nome": "Mass Destruction",
         "autor": "Shoji Meguro (vocal por Lotus Juice e Yumi Kawamura)",
         "duracao": "3:29",
-        "estilo": "J-Pop / Hip-Hop / Jazz Fusion",
+        "estilo": "Jazz Fusion",
         "mesLancamento": "Julho",
         "anoLancamento": 2006
     },
@@ -31,7 +31,7 @@
         "nome": "Reach Out To The Truth",
         "autor": "Shoji Meguro (vocal por Shihoko Hirata)",
         "duracao": "2:48",
-        "estilo": "J-Pop / Pop Rock",
+        "estilo": "Pop Rock",
         "mesLancamento": "Julho",
         "anoLancamento": 2008
     },
@@ -40,7 +40,7 @@
         "nome": "Rude Buster",
         "autor": "Toby Fox",
         "duracao": "1:15",
-        "estilo": "Chiptune / Jazz Rock",
+        "estilo": "Jazz Rock",
         "mesLancamento": "Novembro",
         "anoLancamento": 2018
     },
@@ -49,16 +49,16 @@
         "nome": "BIG SHOT",
         "autor": "Toby Fox",
         "duracao": "2:22",
-        "estilo": "Chiptune / Progressive Rock / Synthpop",
+        "estilo": "Progressive Rock",
         "mesLancamento": "Setembro",
-        "anoLancamento": 2021,
+        "anoLancamento": 2021
     },
     {
         "id": 7,
         "nome": "Rock With You",
         "autor": "Michael Jackson",
         "duracao": "3:21",
-        "estilo": "R&B (Rhythm and Blues), Funk e Pop",
+        "estilo": "Rhythm and Blues",
         "mesLancamento": 11,
         "anoLancamento": 1979
     },
@@ -67,7 +67,7 @@
         "nome": "Kid & Leveret",
         "autor": "Yaelokre",
         "duracao": "5:13",
-        "estilo": "música folclórica (folk)",
+        "estilo": "folclórica",
         "mesLancamento": 2,
         "anoLancamento": 2025
     }
