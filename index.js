@@ -12,7 +12,7 @@ const fs = require('fs')
 
 app.post("/musicas", (req, res) => {
     const musica = req.body
-    if (!musica || Object.keys(musica).length === 0) {
+    if (!musica || Object.keys(musica).length == 0) {
         return res.status(400).json({ resposta: "Body não preenchido" })
     } else {
         try {
@@ -57,7 +57,7 @@ app.get("/musicas/estilo/:estilo", (req, res) => {
     try {
         const musica = JSON.parse(fs.readFileSync("bd.json", "utf8"))
         const musicasFiltradas = musica.filter(
-            (m) => m.estilo && m.estilo.toLowerCase() === estiloBusca
+            (m) => m.estilo && m.estilo.toLowerCase() == estiloBusca
         )
         if (musicasFiltradas.length == 0) {
             return res.status(404).json({ resposta: "Nenhuma música encontrada para este estilo" })
@@ -77,7 +77,6 @@ app.delete("/musicas/:id", (req, res) => {
         if (!musicaExiste) {
             return res.status(404).json({ resposta: "Música não encontrada" })
         }
-        
         const musicaAtualizadas = musica.filter(m => m.id != id)
         fs.writeFileSync('bd.json', JSON.stringify(musicaAtualizadas), 'utf8')
         res.status(200).json({ resposta: "Música removida com sucesso!" })
