@@ -59,7 +59,7 @@ app.get("/musicas/estilo/:estilo", (req, res) => {
         const musicasFiltradas = musica.filter(
             (m) => m.estilo && m.estilo.toLowerCase() === estiloBusca
         )
-        if (musicasFiltradas.length === 0) {
+        if (musicasFiltradas.length == 0) {
             return res.status(404).json({ resposta: "Nenhuma música encontrada para este estilo" })
         }
         res.status(200).json(musicasFiltradas)
